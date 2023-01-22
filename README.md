@@ -8,3 +8,5 @@ Se establecen los eventos "click" para los botones de "encriptar" y "desencripta
 Se establece un evento "click" para el botón de copiar y se asigna la función "copiar"
 Se define la función "copiar" que se encarga de copiar el texto del elemento "mensaje" a la portapapeles
 Se definen las funciones "encriptar" y "desencriptar" que se encargan de encriptar y desencriptar el texto respectivamente.
+
+![image](https://user-images.githubusercontent.com/89950678/213942383-cabea3df-21ba-43f9-ab61-ae13a5149dd7.png)
