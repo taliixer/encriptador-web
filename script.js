@@ -4,7 +4,12 @@ const botonEncriptar = document.getElementById("btn-encriptador")
 const botonDesencriptar = document.getElementById("btn-desencriptador")
 const decoracion = document.querySelector(".decoracion")
 const btnCopiar = document.getElementById("boton-copiar")
-var answer = document.getElementById("respuestaCopiado");
+let answer = document.getElementById("respuestaCopiado");
+let matrisCodigo = [["e","enter"],
+                    ["i","amis"],
+                    ["a","ai"],
+                    ["o","ober"],
+                    ["u","ufat"]]
 
 botonEncriptar.addEventListener("click",btnEncriptar)
 botonDesencriptar.addEventListener("click",btnDesencriptar)
@@ -42,8 +47,6 @@ function copiar() {
 }
 
 function encriptar(stringEncriptado) {
-    let matrisCodigo = [["e","enter"],["i","amis"],["a","ai"],["o","ober"],["u","ufat"]]
-    console.table(matrisCodigo)
     
     stringEncriptado = stringEncriptado.toLowerCase()
 
@@ -56,8 +59,6 @@ function encriptar(stringEncriptado) {
 }
 
 function desencriptar(stringDesencriptado) {
-    let matrisCodigo = [["e","enter"],["i","amis"],["a","ai"],["o","ober"],["u","ufat"]]
-    console.table(matrisCodigo)
     
     stringDesencriptado = stringDesencriptado.toLowerCase()
 

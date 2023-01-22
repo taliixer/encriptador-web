@@ -8,7 +8,7 @@ html{
 }
 :root{
     /* colors */
-    --marron : #533B3B;
+    --marron : #ffffff;
     /* Fonts */
     --main : 'Inika', serif;;
     --secondary : 'Poppins', sans-serif;
@@ -19,6 +19,7 @@ html{
 }
 h1{
     font-size: var(--s1);
+    font-family: var(--secondary);
     color: var(--marron);
     width: 20%;
 }
@@ -26,12 +27,10 @@ h1{
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("./img/paisaje.svg");
+    background-color: rgb(203, 158, 209);
 }
 .contenedor-principal{
+    background-color: mediumpurple;
     max-width: 1000px;
     align-self: center;
     display: flex;
@@ -39,7 +38,7 @@ h1{
     width: 90%;
     margin: 0 auto;
     height: 80%;
-    backdrop-filter: blur(4px);
+    border-radius: 30px;
     padding: 0 47px;
 }
 .encabezado{
@@ -66,7 +65,7 @@ h1{
     flex-wrap: wrap;
 }
 .programa__cuadro-texto--entrada{
-    border: 5px solid var(--marron);
+    border: 5px solid #662c72;
     background: rgba(255, 255, 255, 0.69);
 }
 .programa__cuadro-texto{
@@ -97,13 +96,13 @@ h1{
     width: 120px;
     height: 50px;
     border-radius: 15px;
-    border: solid 2px var(--marron);
+    border: solid 2px #662c72;
     font-size: var(--s3);
     font-family: var(--secondary);
 }
 .boton:hover{
     cursor: pointer;
-    background-color: #533B3B;
+    background-color: #662c72;
     color: white;
 }
 .programa__redes-sociales{
@@ -112,16 +111,16 @@ h1{
     justify-content: space-around;
     gap: 30px;
 }
+.programa__redes-sociales--icono > a{
+    width: 100px;
+    height: 100px;
+}
 .programa__redes-sociales--icono{
     width: 30px;
     height: 30px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.programa__redes-sociales--icono > a{
-    width: 100px;
-    height: 100px;
 }
 span{
     display: inline-block;
@@ -149,7 +148,7 @@ span{
     width: 35%;
     height: 400px;
     background: rgba(255, 255, 255, 0.69);
-    border: 5px solid var(--marron);
+    border: 5px solid #662c72;
 }
 .decoracion{
     display: block;
