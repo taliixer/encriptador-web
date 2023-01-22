@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="pantalla">
+        <section class="contenedor-principal">
+            <div class="encabezado">
+                <h1>Encriptador de Texto</h1>
+                <p class="encabezado__descripcion">Una nueva aventura te llama encuentra es hora de CREAR</p>
+            </div>
+
+            <div class="programa">
+                <div class="programa__entrada-mensaje">
+                    <textarea class="programa__cuadro-texto programa__cuadro-texto--entrada" autocapitalize="none" maxlength="300" placeholder="Ingresa tu texto aqui ..." ></textarea>
+                    <h3 class="programa__descripcion">Crea mensajes secretos con tus amigos</h3>
+
+                    <div class="programa__botones">
+                        <button id="btn-encriptador" class="boton">Encriptar</button>
+                        <button id="btn-desencriptador"class="boton">Desencriptar</button>
+                    </div>
+
+                    <div class="programa__redes-sociales">
+                        <a href="#"><span class="body__redes-sociales--icono instagram"></span></a>
+                        <a href="#"><span class="body__redes-sociales--icono twitter"></span></a>
+                        <a href="#"><span class="body__redes-sociales--icono github"></span></a>
+                        <a href="#"><span class="body__redes-sociales--icono linkedin"></span></a>
+                    </div>
+                </div>
+
+                <div class="programa__salida-mensaje">
+                    <textarea class="programa__cuadro-texto programa__cuadro-texto--salida" autocapitalize="none" readonly="readonly"></textarea>
+                    <div class="decoracion">
+                        <img class="salida__img" src="./img/d1.png" alt="">
+                        <h3>Tu mensaje no ha sido encontrado</h3>
+                        <p>Ingresa el mensaje que deseas encriptar o desencriptar</p>
+                    </div>
+                    <div class="decoracion__botones">
+                        <button id="boton-copiar"><img src="./img/copiar.png" alt=""></button>
+                        <span id="respuestaCopiado"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    /* colors */
+    --marron : #533B3B;
+    /* Fonts */
+    --main : 'Inika', serif;;
+    --secondary : 'Poppins', sans-serif;
+    /* Sizes */
+    --s1 : 3.6rem;
+    --s2 : 2rem;
+    --s3 : 1.5rem
+}
+h1{
+    font-size: var(--s1);
+    color: var(--marron);
+    width: 20%;
+}
+.pantalla{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./img/paisaje.svg");
+}
+.contenedor-principal{
+    max-width: 1000px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    height: 80%;
+    backdrop-filter: blur(4px);
+    padding: 0 47px;
+}
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+}
+.encabezado__descripcion{
+    justify-self: flex-end;
+    font-size: var(--s2);
+    font-family: var(--secondary);
+    width: 50%;
+}
+.programa{
+    display: flex;
+    gap: 100px;
+}
+.programa__entrada-mensaje{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.programa__cuadro-texto--entrada{
+    border: 5px solid var(--marron);
+    background: rgba(255, 255, 255, 0.69);
+}
+.programa__cuadro-texto{
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    outline: none;
+    padding: 30px;
+    font-size: var(--s2);
+    font-family: var(--secondary);
+    resize: none;
+    margin-bottom: 40px;
+}
+.programa__descripcion{
+    align-self: center;
+    font-family: var(--secondary);
+    font-size: var(--s2);
+    font-weight:400;
+}
+.programa__botones{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+}
+.boton{
+    width: 120px;
+    height: 50px;
+    border-radius: 15px;
+    border: solid 2px var(--marron);
+    font-size: var(--s3);
+    font-family: var(--secondary);
+}
+.boton:hover{
+    cursor: pointer;
+    background-color: #533B3B;
+    color: white;
+}
+.programa__redes-sociales{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+.programa__redes-sociales--icono{
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.programa__redes-sociales--icono > a{
+    width: 100px;
+    height: 100px;
+}
+span{
+    display: inline-block;
+}
+.instagram{
+    background-image: url(./img/instagram.png);
+}
+.twitter{
+    background-image: url(./img/twitter.png);
+}
+.github{
+    background-image: url(./img/github.png);
+}
+.linkedin{
+    background-image: url(./img/linkedin.png);
+}
+.programa__salida-mensaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: var(--secondary);
+    font-size: var(--s3);
+    text-align: center;
+    align-items: center;
+    width: 35%;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.69);
+    border: 5px solid var(--marron);
+}
+.decoracion{
+    display: block;
+}
+#boton-copiar{
+    background-color: transparent;
+    border: none;
+}
+#boton-copiar:hover{
+    cursor: pointer;
+}
+.decoracion__botones{
+    display: flex;
+    flex-direction: column;
+}
+.programa__cuadro-texto--salida{
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+.salida__img{
+    width: 100px;
+    height: 140px;
+}
